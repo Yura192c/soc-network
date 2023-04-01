@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'debug_toolbar',
+    'drf_yasg',
     'rest_framework',
     'djoser',
     'profiles',
@@ -150,4 +151,12 @@ AUTH_USER_MODEL = 'profiles.UserNet'
 
 INTERNAL_IPS = [
     '127.0.0.1',
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:8080',
+    'http://localhost:8081',
+    'http://127.0.0.1:8000',
+    'http://127.0.0.1:1313',
+    'http://164.90.190.249',
 ]
