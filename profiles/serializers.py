@@ -5,6 +5,7 @@ from .models import UserNet
 class GetUserNetSerializer(serializers.ModelSerializer):
     '''info about user'''
 
+    image = serializers.ImageField(read_only=True)
     class Meta:
         model = UserNet
         exclude = ('password',
