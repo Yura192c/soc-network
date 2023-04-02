@@ -38,10 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'debug_toolbar',
+    'mptt',
     'drf_yasg',
     'rest_framework',
     'djoser',
+
     'profiles',
+    'src.wall',
+    'src.comments',
 ]
 
 MIDDLEWARE = [
